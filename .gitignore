@@ -1,0 +1,44 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Data files (raw and processed are large)
+data/raw/*.parquet
+data/processed/*.npy
+data/edge_nodes/*.npy
+
+# Models - Keep the trained model but exclude others
+models/saved/*.h5
+models/saved/*.keras
+# federated_models.pkl is kept (this is your trained model)
+
+# Results
+results/figures/*.png
+results/logs/*.log
+
+# Environment variables
+.env
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
