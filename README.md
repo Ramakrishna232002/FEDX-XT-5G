@@ -68,41 +68,6 @@ Unlike traditional IDS that centralize sensitive network data, AEGIS Sentinel tr
 - ⏱️ **<5ms inference time** per packet
 - 🎯 **88% F1-Score** on UNSW-NB15 dataset
 - 🔍 **100% interpretable** with feature importance
-
----
-
-## 🏗️ Solution Architecture
-## PHASE 1: DATA
-
-[5G Network Traffic] ──►   [Data Collection]  ──►  [Preprocessing]  ──►  [Feature Engineering]
-(Edge Nodes)    (Traffic Monitor)   (Clean, Encode)   (34 Features)
-│
-▼
-[UNSW-NB15 Dataset]
-(175k Train / 82k Test)
-
-## PHASE 2: MODEL
-
-- [Features] ──► [XGBoost Training] ──► [Model Evaluation] ──► [SHAP Integration] [Treatment] [Dosage Range] [Top 3 Factors]
-  (Classification) (Regression) (Interpretability)
-
-## PHASE 3: DEPLOYMENT
-
-- [GitHub] ──► [GitHub Actions] ──► [Docker Build] ──► [AWS ECR] ──► [AWS EC2] [FastAPI Server] (REST Endpoints)
-
-## PHASE 4: USER INTERFACE
-
-- [Doctor Input] ──► [Web Dashboard] ──► [API Call] ──► [Recommendation] 
-- [Treatment + Dosage Range + SHAP]
-- [Doctor Reviews & Decides] (Accept / Override / Modify)
-
-## PHASE 5: MONITORING
-
-- [API Logs] ──► [CloudWatch] ──► [Drift Detection] ──► [Alerts] ──► [Retraining]
-
----
-
-
 ---
 
 ## 💻 Tech Stack
@@ -256,9 +221,10 @@ Content-Type: application/json
     "✓ Slow handshake response"
   ]
 }
----
 
-## Installation & Setup 🚀
+```
+
+### Installation & Setup 🚀
 
 ## Prerequisites
 
@@ -290,7 +256,7 @@ Content-Type: application/json
 - source venv/bin/activate
 - streamlit run frontend/app.py
 
-  ## 🏗️ Architecture
+## 🏗️ Architecture
 ```text
 
 FedX-ZT-5G/
