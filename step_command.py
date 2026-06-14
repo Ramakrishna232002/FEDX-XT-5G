@@ -25,7 +25,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 Step 4: Download Dataset
-https://www.unsw.adfa.edu.au/unsw-canberra-cyber/cybersecurity/ADFA-NB15-Datasets/
+https://www.kaggle.com/datasets/dhoogla/unswnb15?resource=download
 
 Step 5: Train the Federated Model (First Time Only)
 python src/federated_final.py
